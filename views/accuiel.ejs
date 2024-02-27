@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="animation.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>CURAHOPE</title>
+    <link rel="icon" type="image/svg" href="/images/doctor-svgrepo-com.svg">
+
+</head>
+
+<body>
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#"><img src="/images/qq-removebg-preview (1).png" class="img-fluid"
+                    alt=""></a>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CURAHOPE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#about-us">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="navbar-collapse offcanvas-collapse" id="offcanvasNavbar">
+                <ul class="navbar-nav">
+                    <!-- Liens pour les pages de connexion -->
+                    <li class="nav-item">
+                        <a href="/log" class="nav-link">Login Médecin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/log" class="nav-link">Login Patient</a>
+                    </li>
+                </ul>
+            </div>
+            
+
+            <button class="navbar-toggler pe_0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!--end navbar -->
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/young-handsome-physician-medical-robe-with-stethoscope.jpg" alt="Los Angeles"
+                    class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/test-tube-5065426.jpg" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/total-shape-yn8KzjHGtak-unsplash.jpg" alt="New York" class="d-block" style="width:100%">
+
+            </div>
+            <!--caption-->
+            <div class="caption">
+                <h1>CURAHOPE HOSPITAL</h1>
+                <h3 class="description"> we provide compassionate care <br>and advanced treatments to help <br> you heal and rediscover the
+                    beauty in life.</h3>
+            </div>
+
+            <!--show collapse-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Show
+                more</button>
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+
+        </div>
+    </div>
+    <!--about us-->
+    <section class="hero" id="about-us">
+        <div class="heading">
+            <h1>About Us</h1>
+        </div>
+        <div class="main">
+            <div class="hero-image">
+                <img src="/images/doctor.jpeg" alt="">
+            </div>
+            <div class="hero-content">
+                <h2>Welcome To Our Website</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam deserunt corrupti, architecto quis
+                    tenetur ipsum aut facilis! Illum in quod, facere debitis non reprehenderit excepturi, et, eligendi
+                    sequi eveniet aliquid?</p>
+                <button class="cta-button">Our Services</button>
+            </div>
+        </div>
+    </section>
+    <!--service-->
+    <div class="section " id="services">
+        <div class="title-section">
+            <h1>Our Services</h1>
+        </div>
+        <div class="service">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-hand-holding-medical" style="color: #63E6BE;"></i>
+                </div>
+                <h2>surgery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod id labore corporis quo sunt non
+                    incidunt nesciunt</p>
+                <div id="collapse-1" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-1">Read More</button>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-microscope" style="color: #63E6BE;"></i>
+                </div>
+                <h2>surgery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod id labore corporis quo sunt non
+                    incidunt nesciunt</p>
+
+                <div id="collapse-2" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-2">Read More</button>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-stethoscope" style="color: #63E6BE;"></i>
+                </div>
+                <h2>surgery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod id labore corporis quo sunt non
+                    incidunt nesciunt</p>
+
+                <div id="collapse-3" class="collapse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                    data-bs-target="#collapse-3">Read More</button>
+            </div>
+        </div>
+    </div>
+    <!--contact us -->
+    <section>
+        <div class="title-section" id="contact">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="container">
+            <div class="form">
+                <div class="contact-info">
+                    <h3 class="get" >Let's get in touch</h3>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                        dolorum adipisci recusandae praesentium dicta!
+                    </p>
+                    <div class="info">
+                        <div class="information">
+                            <img src="/images/icons8-location-48.png" class="icon" alt="" />
+                            <p class="info">92 Cherry Drive Uniondale, NY 11553</p>
+                        </div>
+                        <div class="information">
+                            <img src="/images/icons8-email-50.png" class="icon" alt="" />
+                            <p class="info">lorem@ipsum.com</p>
+                        </div>
+                        <div class="information">
+                            <img src="/images/icons8-phone-50.png" class="icon" alt="" />
+                            <p class="info">123-456-789</p>
+                        </div>
+                    </div>
+
+                    <div class="social-media">
+                        <p>Connect with us :</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+
+                    <form action="/" autocomplete="off">
+                        <h3 class="title">Contact us</h3>
+                        <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                            <label for="">Username</label>
+                            <span>Username</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" name="email" class="input"  />
+                            <label for="">Email</label>
+                            <span>Email</span>
+                        </div>
+                        <div class="input-container">
+                            <input type="tel" name="phone" class="input" />
+                            <label for="">Phone</label>
+                            <span>Phone</span>
+                        </div>
+                        <div class="input-container textarea">
+                            <textarea name="message" class="input"></textarea>
+                            <label for="">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <input type="submit" value="Send" class="btn" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
