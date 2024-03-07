@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send Files to Patient</title>
+</head>
+<body>
+    <h1>Send Files to Patient</h1>
+    <form id="sendForm">
+        <input type="file" id="fileInput" accept=".pdf,.doc,.docx">
+        <input type="text" id="patientAddress" placeholder="Patient Ethereum Address">
+        <button type="submit">Send File</button>
+    </form>
+
+    <script src="web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

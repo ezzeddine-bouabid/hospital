@@ -34,7 +34,7 @@
                 <img src="/images/user-3297.svg" alt="img1">
                 <input type="email" name="email" placeholder="Email" required="">
                 <input type="password" name="psw" placeholder="Password" required="">
-                <a href="/forgetPassword">Forget your password !</a>
+                <a href="/verify-user">Forget your password !</a>
                 <button type="submit">Sign in</button>
             </form>
         </div>
@@ -139,12 +139,14 @@ input{
     border: none;
     outline: none;
 }
-a{
-    color: #333;
-    font-size: 14px;
-    text-decoration: none;
-    margin: 15px 0;
-}
+a {
+            text-decoration: none; /* Removed underline from anchor */
+            color: green; /* Changed link color to match button */
+            margin-top: 10px; /* Added margin to separate button and link */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover for visual feedback */
+        }
 button{
     color: #fff;
     background: green;

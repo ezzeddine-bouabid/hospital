@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Patients - Ajouter Patient</title>
+</head>
+<body>
+    <h2>Ajouter un Patient</h2>
+    <form id="addPatientForm">
+        <label for="firstName"></label>
+        <input type="text" id="firstName" name="firstName" placeholder=" FirstName" required><br><br>
+        <label for="lastName"></label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br><br>
+        <label for="phoneNumber"></label>
+        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Phone number"required><br><br>
+        <button type="submit">Search</button>
+    </form>
+    <a href="firstD.html"><button >Cancel</button></a>
+
+    <script>
+        document.getElementById("addPatientForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Get form data
+            var firstName = document.getElementById("firstName").value;
+            var lastName = document.getElementById("lastName").value;
+            var phoneNumber = document.getElementById("phoneNumber").value;
+
+            // Create patient object
+            var patient = {
+                firstName: firstName,
+                lastName: lastName,
+                phoneNumber: phoneNumber
+            };
+
+            // Save patient data to local storage
+            var patients = JSON.parse(localStorage.getItem("patients")) || [];
+            patients.push(patient);
+            localStorage.setItem("patients", JSON.stringify(patients));
+
+            // Redirect to list patient page
+            window.location.href = "firstD.html";
+        });
+    </script>
+</body>
+</html>
